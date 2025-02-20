@@ -1,8 +1,10 @@
-function doSomething(){
-    for (var i=0; i<5; i++){
-        console.log(i);
-    }
-    console.log('Finally:'+i);
-}
+const colorRed = 0;
+const ColorGreen = 1;
+const colorBlue = 2;
 
-doSomething();
+enum Color{ Red, Green, Blue };
+
+console.log(Color.Red);
+console.log(Color.Green);
+console.log(Color.Blue);
+
