@@ -1,10 +1,8 @@
-const colorRed = 0;
-const ColorGreen = 1;
-const colorBlue = 2;
+let log = function(message){
+    console.log(message);
+}
 
-enum Color{ Red, Green, Blue };
+log("Learning arrow function");
 
-console.log(Color.Red);
-console.log(Color.Green);
-console.log(Color.Blue);
-
+let doLog = (message) => console.log(message);
+doLog("Learning arrrow function");
