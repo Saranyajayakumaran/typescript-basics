@@ -1,6 +1,7 @@
-var log = function (message) {
-    console.log(message);
+var drawPoint = function (point) {
+    console.log("x: ".concat(point.x, ",y:").concat(point.y));
 };
-log("Learning arrow function");
-var doLog = function (message) { return console.log(message); };
-doLog("Learning arrrow function");
+drawPoint({
+    x: 1,
+    y: 2
+});

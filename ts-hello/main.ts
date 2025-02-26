@@ -1,8 +1,13 @@
-let log = function(message){
-    console.log(message);
+interface Point{
+    x: number,
+    y: number
 }
 
-log("Learning arrow function");
+let drawPoint = (point: Point) => {
+console.log(`x: ${point.x},y:${point.y}`);
+};
 
-let doLog = (message) => console.log(message);
-doLog("Learning arrrow function");
+drawPoint({
+    x:1,
+    y:2
+});
